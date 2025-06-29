@@ -8,8 +8,8 @@ export default function APIDocsPage() {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gradient bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent mb-4">
-            API 文档
-          </h1>
+              API 文档
+            </h1>
           <p className="text-lg text-muted-foreground">
             文本转图片服务的完整API文档，支持Markdown、HTML和纯文本渲染
           </p>
@@ -24,12 +24,12 @@ export default function APIDocsPage() {
           </TabsList>
 
           <TabsContent value="overview" className="space-y-6">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
                   🚀 服务特性
-                </CardTitle>
-              </CardHeader>
+                  </CardTitle>
+                </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -50,16 +50,16 @@ export default function APIDocsPage() {
                       <li>• 高质量PNG输出</li>
                     </ul>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                  </div>
+                </CardContent>
+              </Card>
 
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
                   🔧 技术架构
-                </CardTitle>
-              </CardHeader>
+                  </CardTitle>
+                </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="text-center p-4 bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg">
@@ -77,9 +77,9 @@ export default function APIDocsPage() {
                     <h3 className="font-semibold">安全可靠</h3>
                     <p className="text-sm text-muted-foreground">内容安全处理</p>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                  </div>
+                </CardContent>
+              </Card>
           </TabsContent>
 
           <TabsContent value="endpoints" className="space-y-6">
@@ -97,22 +97,22 @@ export default function APIDocsPage() {
                   <div className="flex items-center gap-2">
                     <Badge variant="default" className="bg-green-500">POST</Badge>
                     <code className="text-sm bg-muted px-2 py-1 rounded">/api/generate-image</code>
-                  </div>
-                  
+                </div>
+
                   <div className="space-y-4">
                     <h3 className="font-semibold text-lg">请求参数</h3>
-                    <div className="overflow-x-auto">
+                  <div className="overflow-x-auto">
                       <table className="w-full border-collapse border border-gray-200">
-                        <thead>
-                          <tr className="bg-gray-50">
+                      <thead>
+                        <tr className="bg-gray-50">
                             <th className="border border-gray-200 px-4 py-2 text-left">参数</th>
                             <th className="border border-gray-200 px-4 py-2 text-left">类型</th>
                             <th className="border border-gray-200 px-4 py-2 text-left">必填</th>
                             <th className="border border-gray-200 px-4 py-2 text-left">说明</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
                             <td className="border border-gray-200 px-4 py-2 font-mono">content</td>
                             <td className="border border-gray-200 px-4 py-2">string</td>
                             <td className="border border-gray-200 px-4 py-2">✅</td>
@@ -147,23 +147,23 @@ export default function APIDocsPage() {
                             <td className="border border-gray-200 px-4 py-2">number</td>
                             <td className="border border-gray-200 px-4 py-2">❌</td>
                             <td className="border border-gray-200 px-4 py-2">图片高度（默认600）</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td className="border border-gray-200 px-4 py-2 font-mono">options.fontSize</td>
                             <td className="border border-gray-200 px-4 py-2">number</td>
                             <td className="border border-gray-200 px-4 py-2">❌</td>
                             <td className="border border-gray-200 px-4 py-2">字体大小（默认18）</td>
-                          </tr>
-                          <tr>
+                        </tr>
+                        <tr>
                             <td className="border border-gray-200 px-4 py-2 font-mono">options.backgroundImage</td>
                             <td className="border border-gray-200 px-4 py-2">string</td>
                             <td className="border border-gray-200 px-4 py-2">❌</td>
                             <td className="border border-gray-200 px-4 py-2">自定义背景图片URL</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+                </div>
 
                   <div className="space-y-4">
                     <h3 className="font-semibold text-lg">响应格式</h3>
@@ -178,7 +178,7 @@ export default function APIDocsPage() {
                       <p className="text-sm text-muted-foreground">错误响应：</p>
                       <div className="bg-red-50 border border-red-200 rounded p-4">
                         <pre className="text-sm bg-gray-100 p-2 rounded overflow-x-auto">
-{`{
+                          {`{
   "error": "错误信息",
   "details": "详细错误描述"
 }`}
@@ -192,12 +192,12 @@ export default function APIDocsPage() {
           </TabsContent>
 
           <TabsContent value="examples" className="space-y-6">
-            <Card>
-              <CardHeader>
+              <Card>
+                <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   💡 使用示例
                 </CardTitle>
-              </CardHeader>
+                </CardHeader>
               <CardContent className="space-y-6">
                 
                 <div className="space-y-4">
@@ -265,13 +265,13 @@ export default function APIDocsPage() {
     }
   })
 });`}
-                  </pre>
-                </div>
+                    </pre>
+                  </div>
 
                 <div className="space-y-4">
                   <h3 className="font-semibold text-lg">cURL示例</h3>
                   <pre className="text-sm bg-gray-100 p-4 rounded overflow-x-auto">
-{`curl -X POST http://localhost:3000/api/generate-image \\
+                      {`curl -X POST http://localhost:3000/api/generate-image \\
   -H "Content-Type: application/json" \\
   -d '{
     "content": "# 测试标题\\n\\n这是测试内容",
@@ -284,19 +284,19 @@ export default function APIDocsPage() {
     }
   }' \\
   --output output.png`}
-                  </pre>
-                </div>
-              </CardContent>
-            </Card>
+                    </pre>
+                  </div>
+                </CardContent>
+              </Card>
           </TabsContent>
 
           <TabsContent value="themes" className="space-y-6">
-            <Card>
-              <CardHeader>
+              <Card>
+                <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   🎨 主题样式
                 </CardTitle>
-              </CardHeader>
+                </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="space-y-4">
@@ -307,11 +307,11 @@ export default function APIDocsPage() {
                       <h3 className="font-semibold text-pink-600">Cute 萌系</h3>
                       <p className="text-sm text-muted-foreground">粉色渐变背景，可爱风格</p>
                       <div className="mt-2 space-y-1">
-                        <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-pink-500 rounded"></div>
                           <span className="text-xs">主色: #ff6b9d</span>
-                        </div>
-                        <div className="flex items-center gap-2">
+                    </div>
+                    <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-purple-300 rounded"></div>
                           <span className="text-xs">辅色: #ffb3d9</span>
                         </div>
@@ -327,12 +327,12 @@ export default function APIDocsPage() {
                       <h3 className="font-semibold text-blue-600">Elegant 优雅</h3>
                       <p className="text-sm text-muted-foreground">蓝紫渐变背景，优雅风格</p>
                       <div className="mt-2 space-y-1">
-                        <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-blue-500 rounded"></div>
                           <span className="text-xs">主色: #667eea</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <div className="w-4 h-4 bg-purple-500 rounded"></div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-purple-500 rounded"></div>
                           <span className="text-xs">辅色: #764ba2</span>
                         </div>
                       </div>
@@ -351,7 +351,7 @@ export default function APIDocsPage() {
                           <div className="w-4 h-4 bg-purple-600 rounded"></div>
                           <span className="text-xs">主色: #805ad5</span>
                         </div>
-                        <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-pink-600 rounded"></div>
                           <span className="text-xs">辅色: #d53f8c</span>
                         </div>
@@ -370,9 +370,9 @@ export default function APIDocsPage() {
                         <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-green-500 rounded"></div>
                           <span className="text-xs">主色: #38b2ac</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <div className="w-4 h-4 bg-cyan-400 rounded"></div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-cyan-400 rounded"></div>
                           <span className="text-xs">辅色: #4fd1c7</span>
                         </div>
                       </div>
@@ -391,7 +391,7 @@ export default function APIDocsPage() {
                           <div className="w-4 h-4 bg-orange-500 rounded"></div>
                           <span className="text-xs">主色: #ed8936</span>
                         </div>
-                        <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-yellow-400 rounded"></div>
                           <span className="text-xs">辅色: #f6ad55</span>
                         </div>
@@ -410,8 +410,8 @@ export default function APIDocsPage() {
                         <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-blue-600 rounded"></div>
                           <span className="text-xs">主色: #3182ce</span>
-                        </div>
-                        <div className="flex items-center gap-2">
+                    </div>
+                    <div className="flex items-center gap-2">
                           <div className="w-4 h-4 bg-blue-400 rounded"></div>
                           <span className="text-xs">辅色: #63b3ed</span>
                         </div>
@@ -434,10 +434,10 @@ export default function APIDocsPage() {
                       <li>• 建议使用高质量图片以获得最佳效果</li>
                       <li>• 图片会自动缩放以适应容器</li>
                     </ul>
+                    </div>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
           </TabsContent>
         </Tabs>
       </div>

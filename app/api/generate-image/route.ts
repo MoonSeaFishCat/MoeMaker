@@ -104,7 +104,7 @@ function highlightCode(code: string, language: string): string {
       .replace(/("([^"]*)")/g, '<span class="string">$1</span>')
       .replace(/\b(true|false|null)\b/g, '<span class="literal">$1</span>')
       .replace(/\b(\d+(?:\.\d+)?)\b/g, '<span class="number">$1</span>')
-  } else {
+    } else {
     // 默认处理
     return escapedCode
       .replace(/\b(const|let|var|function|return|if|else|for|while|class|import|export|default|async|await|def|class|import|from|as|elif|try|except|finally|with|in|is|not|and|or|True|False|None|true|false|null|undefined)\b/g, '<span class="keyword">$1</span>')
@@ -116,7 +116,7 @@ function highlightCode(code: string, language: string): string {
 
 export async function POST(request: NextRequest) {
   let browser = null
-  
+
   try {
     const { content, format = 'text', theme = 'cute', options = {} } = await request.json()
 
