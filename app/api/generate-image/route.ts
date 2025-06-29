@@ -130,8 +130,7 @@ export async function POST(request: NextRequest) {
     // 启动浏览器
     browser = await puppeteer.launch({
       headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      executablePath: 'C:\\Users\\Administrator\\.cache\\puppeteer\\chrome\\win64-138.0.7204.49\\chrome-win64\\chrome.exe'
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
     })
 
     const page = await browser.newPage()
